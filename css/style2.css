@@ -1,0 +1,148 @@
+/* === Styles généraux === */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+}
+
+/* === En-tête === */
+header {
+    background-color: #2c3e50;
+    padding: 15px 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    margin: 0;
+  }
+  
+  nav a {
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  nav a:hover {
+    background-color: #34495e;
+  }
+  
+  nav button {
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  nav button:hover {
+    background-color: #16a085;
+  }
+
+/* === Formulaires de connexion et d'inscription === */
+
+main {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+form {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input[type="submit"] {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #27ae60;
+}
+
+/* === Lien mot de passe oublié === */
+a[href*="mot_de_passe_oublier"] {
+    margin-top: 10px;
+    display: inline-block;
+    color: #2980b9;
+    text-decoration: none;
+}
+
+a[href*="mot_de_passe_oublier"]:hover {
+    text-decoration: underline;
+}
+
+/* === Pied de page === */
+footer {
+    text-align: center;
+    background-color: #34495e;
+    color: white;
+    padding: 15px 0;
+}
+form.connexion {
+    max-width: 450px; /* un peu plus large que l'inscription */
+    padding: 35px 50px; /* plus de marge intérieure */
+}
